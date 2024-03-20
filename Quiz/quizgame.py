@@ -1,14 +1,5 @@
 #Dataware House and Data Mining Quiz Game
-
-print("======Hello There, This is DWM Quiz Game======")
-ready=input("Are you ready to play the Quiz ?").lower()
-
-if(ready=="yes"):
-  print("Great")
-  question()
-else:
-    quit()
-
+import math 
 
 def question():
   score=0
@@ -35,3 +26,18 @@ def question():
     print("Wrong")
 
   return score
+
+
+
+
+print("======Hello There, This is DWM Quiz Game======")
+ready=input("Are you ready to play the Quiz ?").lower()
+
+if(ready=="yes"):
+  print("Great")
+  result=question()
+  print("Your score is:",math.floor((result*100)/3),"%")
+else:
+    quit()
+
+
