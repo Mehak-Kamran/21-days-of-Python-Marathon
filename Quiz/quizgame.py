@@ -25,6 +25,24 @@ def question():
   else:
     print("Wrong")
 
+  answer=input("ETL stands for ? \n").lower()
+  if(answer=="extract transform load"):
+    print("Correct Answer")
+    score+=1
+  else:
+    print("Wrong")
+
+  
+   answer=input("SCD stands for ? \n").lower()
+  if(answer=="slowly change dimension"):
+    print("Correct Answer")
+    score+=1
+  else:
+    print("Wrong")
+
+
+
+
   return score
 
 
@@ -35,8 +53,12 @@ ready=input("Are you ready to play the Quiz ?\n").lower()
 
 if(ready=="yes"):
   print("Great")
-  result=question()
-  print("Your score is:",math.floor((result*100)/3),"%")
+  result=math.floor((question()*100)/3)
+  if 80<=result<=100:
+    print("Congrats your score is:",result,"%")
+  else:
+    print("Better play next time your score is:",result,"%")
+
 else:
     print("You are out")
     quit()
