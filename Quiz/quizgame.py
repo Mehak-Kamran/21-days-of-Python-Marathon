@@ -33,7 +33,7 @@ def question():
     print("Wrong")
 
   
-   answer=input("SCD stands for ? \n").lower()
+  answer=input("SCD stands for ? \n").lower()
   if(answer=="slowly change dimension"):
     print("Correct Answer")
     score+=1
@@ -53,7 +53,7 @@ ready=input("Are you ready to play the Quiz ?\n").lower()
 
 if(ready=="yes"):
   print("Great")
-  result=math.floor((question()*100)/3)
+  result=math.floor((question()*100)/5)
   if 80<=result<=100:
     print("Congrats your score is:",result,"%")
   else:
