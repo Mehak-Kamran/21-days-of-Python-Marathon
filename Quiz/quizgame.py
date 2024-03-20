@@ -4,21 +4,21 @@ import math
 def question():
   score=0
 
-  answer=input("Data Ware House is used for which type of Data? ").lower()
+  answer=input("Data Ware House is used for which type of Data? \n").lower()
   if(answer=="historic"):
     print("Correct Answer")
     score+=1
   else:
     print("Wrong")
 
-  answer=input("Data Mining is used to discover ? ").lower()
+  answer=input("Data Mining is used to discover ? \n").lower()
   if(answer=="knowledge"):
     print("Correct Answer")
     score+=1
   else:
-    print("Wrong")
+    print("Wrong Answer")
 
-  answer=input("Distributed Database are not present ? ").lower()
+  answer=input("Distributed Database are not present ? \n").lower()
   if(answer=="physically"):
     print("Correct Answer")
     score+=1
@@ -30,14 +30,15 @@ def question():
 
 
 
-print("======Hello There, This is DWM Quiz Game======")
-ready=input("Are you ready to play the Quiz ?").lower()
+print("======Hello There, This is DWM Quiz Game======\n")
+ready=input("Are you ready to play the Quiz ?\n").lower()
 
 if(ready=="yes"):
   print("Great")
   result=question()
   print("Your score is:",math.floor((result*100)/3),"%")
 else:
+    print("You are out")
     quit()
 
 
