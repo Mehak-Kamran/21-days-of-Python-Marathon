@@ -5,10 +5,11 @@ masterpass=input("Enter your Master password:  ")
 def add():
     name=input("Enter your name: ")
     paswd=input("Enter your password: ")
-    with open("password.txt","a") as f:
-        f.write(name +"|"+ paswd)
+    with open("passwordManager/password.txt","a") as f:
+        f.write(name +"|"+ paswd+"\n")
 
-
+def view():
+   
 
 
 
@@ -23,5 +24,5 @@ while True:
     elif mode=='a':
        add()
     else:
-       print("Enter a valid password please")
+       print("Enter a valid mode please")
        continue
