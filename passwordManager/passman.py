@@ -9,7 +9,17 @@ def add():
         f.write(name +"|"+ paswd+"\n")
 
 def view():
-   
+   with open("passwordManager/password.txt","r") as f:
+      for line in f.readlines():
+         data=line.rstrip()
+         name,paswd=data.split("|")
+         print("name:",name,"password:",paswd)
+
+         
+         
+
+       
+
 
 
 
@@ -19,8 +29,8 @@ while True:
     if mode=="q":
        break
     elif mode=="v":
-       #view()
-       pass
+       view()
+       
     elif mode=='a':
        add()
     else:
