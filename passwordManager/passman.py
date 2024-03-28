@@ -1,6 +1,15 @@
 # Password Manager + Encryption
+#pip install cryptography
+
+from cryptography.fernet import  Fernet
 
 masterpass=input("Enter your Master password:  ")
+
+def keydef():
+   key = Fernet.generate_key()
+   with open("key.key","wb") as f:#write in bytes
+      f.write(key)
+
 
 def add():
     name=input("Enter your name: ")
