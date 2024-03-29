@@ -6,42 +6,19 @@ def roll():
     value=random.randint(min,max)
     return value
 
-def score(val):
-    
-            if val!= 1:
-                while True:
-                    y=input("do you want to play(y):")
-                    if y=="y":
-                        rolling()
-                    else:
-                         quit()        
-        
-            else:
-                quit()
-       
-
-def rolling():
-    val=roll()
-    print(val) 
-    
-    score(val) 
-        
-
-
 while True:
-    players=input("Enter No of players(2-4): ")
-    if players.isdigit():
-        players=int(players)
-        if 2<=players<=4:
-            rolling()
-            
-
-            
+    player=input("Enter no of players(2-4)")
+    if player.isdigit():
+        player=int(player)
+        if 2<= player <=4:
+            break
         else:
-            print("Enter valid range (2-4): ")
-            
+            print("enter valid range(2-4)")
     else:
-        print("Enter a Integer")
-        
+        print("Enter integer (2-4)")
 
+maxscore=50
+playerscore=[0 for _ in range(player)]
 
+if max(playerscore)<max:
+    
