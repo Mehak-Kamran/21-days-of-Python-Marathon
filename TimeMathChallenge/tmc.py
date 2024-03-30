@@ -23,7 +23,7 @@ starttime=time.time()
 for i in range(TOTALPROBLEMS):
     exp,result=generateexp()
     while True:
-        que=int(input(exp+":"+" "))
+        que=int(input("Problem"+" "+str(i)+" => "+exp+":"+" "))
         #print(type(que),type(result))
         if que==result:
             break
