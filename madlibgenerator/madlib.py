@@ -1,5 +1,5 @@
 # read story from a file 
-with open("storyTell/story.txt","r") as f:
+with open("madlibgenerator/story.txt","r") as f:
     story=f.read()
 #print(story)
 
