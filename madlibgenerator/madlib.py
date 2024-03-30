@@ -1,4 +1,4 @@
-# read story from a file 
+# read story from a file only 
 with open("madlibgenerator/story.txt","r") as f:
     story=f.read()
 #print(story)

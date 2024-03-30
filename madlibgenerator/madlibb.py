@@ -1,4 +1,4 @@
-# story Telling
+# Madlib with output in output file
 
 #read the story.txt file 
 with open("madlibgenerator/story.txt","r")as f:
@@ -34,4 +34,5 @@ for word in words:
 for word in words:
     story=story.replace(word,answers[word])
     
-print(story)
+with open("madlibgenerator/outputstory.txt","w") as f:
+    f.write(story)
